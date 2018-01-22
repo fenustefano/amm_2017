@@ -1,0 +1,882 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 31-ago-2017, 15.18.41
+    Author     : Ste2016
+*/
+
+body {
+    
+    background-color: #F0FFFF ;
+    
+}
+
+p {
+    
+   font-size: 12pt ;
+   font-family: "Times new Roman"
+    
+}
+
+
+
+div#form form button#invia {
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    margin-left: 245px;
+    margin-top: 130px;
+}
+
+
+h1,h2,h3 {
+    
+    font-family:"Georgia"  ;
+    color : #0000CD ;
+    
+}
+
+
+h1{
+    
+    font-size: 30px;
+    
+}
+
+
+
+h2{
+    
+    font-size: 20px;
+    
+}
+
+
+
+h3{
+    
+    font-size: 15px;
+    
+}
+
+a{
+    
+    color: #3da5d9;
+    text-decoration: none ;
+}
+
+a:visited {
+    color: #00868b;
+}
+
+a:hover {
+    
+    text-decoration: underline;
+}
+
+/* 
+    bacheca.html
+*/
+
+
+
+header{
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    top: 0;
+    left: 0;
+    background-color: #00fcff;
+    border : 1px solid black ;
+}
+
+
+
+div.title{
+    
+    position: absolute;
+    height: 60px;
+    width: 250px;
+    top :0;
+    left:0;
+    border-right: 1px solid black ;
+    text-align: center;
+    
+    
+}
+
+
+
+
+div.bacheca{
+    
+    position: absolute;
+    height : 60px;
+    width:200px;
+    left: 251px;
+    bottom: 0 ;
+    border-right: 1px solid black ;
+    text-align: center;
+    
+    
+}
+
+
+
+div.bacheca div {
+    
+    top :0;
+    position: relative;
+    width:100%;
+    padding-left: 2px;
+    top:35px;
+}
+
+div#cerca div input#search 
+{margin-left: 0px;}
+
+div.profilo{
+    
+    position: absolute;
+    height : 60px;
+    width:200px;
+    left: 451px;
+    bottom: 0 ;
+    border-right: 1px solid black ;
+    text-align: center;
+    
+    
+}
+
+
+
+div.profilo div {
+    
+    position: relative;
+    width:100%;
+    padding-left: 2px;
+    top:35px;
+    
+}
+
+
+
+div.logout{
+    
+    position: absolute;
+    height : 60px;
+    width: 500px;
+    left: 652px;
+    bottom: 0 ;
+    text-align: center;
+    
+    
+}
+
+
+div.logout div {
+    
+    top:35px;
+    position: relative;
+    width:100%;
+    right: -150px;
+  
+    
+}
+
+
+aside{
+    
+    top: 60px;
+    height:100%;
+    width: 250px;
+    left:0;
+    border: 1px solid black ; 
+    position: fixed;
+    padding-top: 20px;
+    
+    
+}
+
+div.cerca , div.persone , div.gruppi{
+    
+    position: relative;
+    left:30px;
+    
+}
+
+/* regole sia per la bacheca che per il profilo */
+div#page , div.page{
+    
+    
+    margin-left:  250px;
+    margin-top: 62px;
+    
+    
+}
+
+div#frase{
+    
+    margin-top: 80px;
+    width: 750px;
+    height: 100px;
+    
+}
+
+div#frase div{
+    
+    left: 100px;
+        
+}
+
+
+
+div#form , div.post, div.formP{
+    
+    margin-left: 220px;
+    margin-right: 50px;
+    border-radius: 6px;
+    margin-top: 40px;
+    padding: 10px;
+    height: 250px ;
+    background-color: #FAFAFA; 
+    width: 600px;
+    border:  solid 1px graytext;  
+    
+}
+
+div#form div.testo_input{
+      
+    margin-top:  15px; 
+    margin-left: 135px;
+    
+}
+
+div#form div.url_input{
+    
+     margin-top:  25px; 
+     margin-left: 135px;
+}
+
+
+/* stili comuni a tutti gli inputbox*/
+input[type=text] , input[type=url] , input[type=password] , input[type=hidden], textarea{
+    
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+    padding:5px;
+        
+}
+
+textarea{ /*profilo*/
+    
+    height: 100px;
+    
+    
+}
+
+
+div#form div.option{
+    
+    margin-top:  25px; 
+    margin-left: 215px;
+}
+
+
+div#form div.button{
+    
+    margin-top:  25px; 
+    margin-left: 135px;
+}
+
+div#form div.button input{
+    
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+    padding:5px;
+   
+}
+
+img.immaginep {
+    
+    padding-left: 100px;
+    
+    
+    
+}
+
+
+div#nome{
+    
+    margin-left: 100px;
+    margin-top: -50px;
+    
+    margin-bottom: 50px;
+    
+    
+    
+}
+
+/*Regole generali per il profilo*/
+div.page{
+    
+    padding-top: 40px;
+    padding-left: 50px;
+    background-color: #FAFAFA; 
+    width: 800px;
+    height: 650px;
+    border: 3px solid graytext;
+    border-radius:  10px ; 
+    margin-left: 400px;
+    margin-top: 80px;
+    
+    
+    
+}
+
+div.page input ,  div.page textarea{ 
+    
+    margin-left: 0px;
+    
+    
+}
+
+label { /* Stili per la label */
+    
+    margin-right: 20px;
+    display: inline-block; /* Impostiamo la label come elemento blocco */
+    line-height: 30px; /* Altezza di riga */
+    width: 150px; /* Larghezza */
+}
+
+
+div.buttonP{
+    
+    margin-top: 30px;
+   
+    height: 100px;
+    margin-left:   120px; 
+       
+}
+
+input[type="submit"]{
+    
+    height: 50px;
+    width:150px;
+    border-radius: 10px;
+    padding:5px;
+}
+
+
+/*Login*/
+div.formP{
+    
+    margin-left:400px;
+    margin-top:120px;
+    padding-top: 30px;
+       
+}
+
+
+/* log in button */
+div.btlg{
+    
+    margin-top: 45px;
+    margin-left: 250px;
+    
+    
+}
+
+div.btlg button{
+    
+    width: 100px;
+    height: 60px;
+    border-radius: 10px;
+    
+}
+
+div.titleL h2{
+    
+    text-align:center;
+    font-size: 50px;
+    
+     
+}
+
+div.descrizioneP{
+    
+    padding-top: 50px;
+    
+    
+}
+
+
+/*RESPONSIVE*/
+
+@media only screen and (min-width: 1024px)
+{
+  
+    
+    
+}
+
+@media only screen and (min-width: 480px) and (max-width: 1024px)
+{
+    
+    div#form form button#invia 
+    {
+    
+    
+    margin-left: 185px;
+   
+}
+    
+    div.bacheca div 
+    {
+        
+        margin-left: -25px;
+    }
+    
+    
+    
+    div.profilo
+    {
+        width: 90px;
+        
+    }
+    
+    div.profilo div
+    {
+       margin-left: -45px; 
+        
+    }
+    
+    div.title
+    {
+        width:200px;
+        
+    }
+    
+    div.bacheca
+    {
+        width:120px;
+    }
+    
+    div.formP
+    {
+        
+        margin-left: 15%;
+        
+    }
+    
+    div#page div#frase
+    {
+        
+        width: 150px;
+    }
+    
+    div.logout
+    {
+        
+        width: 140px;
+        left:390px;
+    }
+    
+    aside
+    {
+        width: 200px;
+        border-right: none;
+    }
+    div#_post div.post
+    {
+        
+        margin-left: -40px;
+        width: 500px;
+    }
+    
+    div.cerca  div input#search
+    {
+        
+        margin-left: -10px;
+    }
+    
+    div#page div#form
+    {
+        
+        margin-left: -40px;
+        width: 500px;
+        
+    }
+    
+    div#form div.testo_input,div#form div.url_input
+    {
+    
+    margin-left: 100px;
+    }
+    
+    div#form div.option 
+    {
+    
+    margin-left: 150px;
+    }
+
+    
+    div#form div.button 
+    {
+    margin-left: 210px;
+    }
+    
+    div.page
+    {
+        
+        width: 480px;
+        margin-left: 220px;
+        height: 530px;
+    }
+}
+
+@media only screen and (max-width: 780px)
+{
+    
+    div#page div#form
+    {
+        
+        margin-left:-25px;
+        width: 300px; 
+    }
+    
+    div#form form button#invia {
+    
+   
+    margin-left: 100px;
+    
+}
+    
+    div.formP 
+    {
+    margin-left: 0px;
+    
+    }
+    
+    div.formP
+    {
+        width: 450px;
+        margin-left: 20px;
+    }
+    
+    form.register-form input[type=text], input[type=url], input[type=password], input[type=hidden], textarea
+    {
+        margin-left: 60px;
+    }
+    
+    div.btlg 
+    {
+    margin-top: 20px;
+    margin-left: 175px;
+    }
+    
+    form.register-form label
+    {
+        
+        margin-left: 175px;
+    }
+    
+    div.title
+    {
+        
+        width: 170px;
+    }
+    div.logout div 
+    {
+    
+    right: -100px;
+    }
+    
+    div.bacheca div
+    {
+        margin-left:5px;
+    }
+    
+    div.profilo div
+    {
+        margin-left:5px;
+    }
+    
+    div.bacheca
+    {
+        left: 105px;
+        width: 150px;
+        margin-left: 30px;
+    }
+    
+    div.logout
+    {
+        left: 30px;
+        width: 150px;
+        margin-left: 255px;
+    }
+    
+    div.testo_input input[type=text]
+    {
+    width: 175px;
+    margin-left: -70px;
+    }
+  
+    div.url_input input[type=url]
+    {
+    width: 175px;
+    margin-left: -70px;
+    }
+    
+    div#form div.option 
+    {
+    margin-left: 65px;
+    }
+    
+    div#frase {
+    
+    width: 250px;
+   
+}
+    
+    div#form
+    {
+        margin-left: -80px;
+        width: 300px;
+        left: 0px;
+    }
+    
+    input#search
+    {
+        display: none;
+    }
+    aside
+    {
+        width: 150px;
+        border-right: none;
+        
+    }
+    div.profilo
+    {
+        
+     left: 260px;
+     width: 150px;
+        
+    }
+    
+    div#_post div.post
+    {
+        
+        margin-left:-75px;
+        width: 300px;
+                
+    }
+    
+    div.buttonP
+    {
+   
+    margin-left: 245px;
+    }
+    
+    div.page
+    {
+        width: 600px;
+        margin-left:155px;
+        height: 400px;
+    }
+    
+    div.page input, div.page textarea {
+    margin-left: 0px;
+}
+}
+    
+
+
+@media only screen and (max-width: 480px)
+{
+    
+    div.testo_input input
+    {
+     margin-left: -100px;   
+    }
+    
+     div#page div#form
+    {
+        
+        margin-left:15px;
+        width: 300px; 
+    }
+    
+    div.formP
+    {
+        width: 200px;
+        margin-left: 100px;
+        
+    }
+    
+    div.formP input[type=text]
+    {
+        
+        width: 100px;
+        margin-left: 50px;
+    }
+    div.btlg 
+    {
+        margin-left: 55px;
+        margin-top: 10px;
+    }
+    
+    form.register-form label
+    {
+        
+        margin-left: 60px;
+        
+    }
+    
+    div.btlg button
+    {
+        
+        margin-left:0px;
+    }
+    
+    aside
+    {
+        display: none;
+        
+    }
+    
+    div.title
+    {
+        width:100px;
+    }
+    
+    div.title h1
+    {
+       font-size:14pt;
+    }
+    
+    div.bacheca
+    {
+        left:100px;
+        width:100px;
+    }
+    
+    
+     div.profilo
+    {
+        left:200px;
+        width:100px;
+    }
+    
+    div.logout
+    {
+        left: 300px;
+        width: 100px;
+        right: 0px;
+        position:static;
+    }
+    
+    div.logout div
+    {
+        right: -300px;
+    }
+    
+    div#page 
+    {
+    margin-left: 0px;
+    margin-top: 62px;
+    }
+    
+   div#form, div.post, div.formP 
+   {
+    margin-left: -80px;
+    width: 400px;
+   
+   }
+    
+   
+    
+    div.testo_input input[type=text], input[type=url], input[type=password], input[type=hidden], textarea
+    {
+        width:250px;
+        margin-left: -60px
+        
+    }
+    
+    div#form div.option 
+    {
+    
+    margin-left: 135px;
+    }
+    
+    div#form div.button 
+    {
+    
+    margin-left: 185px;
+    }
+    
+    div.page
+    {
+        margin-left: 0px;
+        width: 360px;
+        height: 530px;
+    }
+    
+    div.page input, div.page textarea
+    {
+    margin-left: 0px;
+    }
+    
+    div#frase 
+    {
+    margin-top: 80px;
+    width: 300px;
+    
+    }
+    
+    form.register-form input#Username
+    {
+        
+        margin-left: 135px;
+    }
+    
+    form.register-form input#psw
+    {
+        
+        margin-left: 135px;
+    }
+    
+    div.formP
+    {
+        margin-left: 15px;
+    }
+    
+    
+    
+    div.btlg 
+    {
+    margin-left: 142px;
+    margin-top: 19px;
+}
+    
+    form.register-form label 
+    {
+    margin-left: 158px;
+    }
+    
+    div#form
+    {
+        margin-left: 0px;
+    }
+    
+    div#_post div.post 
+    {
+    margin-left: 0px;
+    width: 400px;
+    }
+}
