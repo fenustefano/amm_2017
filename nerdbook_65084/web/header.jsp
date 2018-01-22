@@ -10,7 +10,7 @@
 <header>
              <div class="title">
                  <h1> Nerdbook </h1>
-             </div>    
+             </div>   
              
              <div class="bacheca">
                  <div>
